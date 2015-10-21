@@ -17,18 +17,10 @@ int main(int argc, char *argv[]){
 
 char smallest_character(char str[], char c){
 	int count;
-	char smallestChar=str[0];
-	char goalChar='z'+1;
 	for(count=0;str[count]!=0;count++){
-		if(str[count]>=c && str[count]<=goalChar)
-			goalChar=str[count];
-		if(str[count]<smallestChar)
-			smallestChar=str[count];
-	}
-	return (goalChar=='z'+1)?smallestChar:goalChar;
-}/* FIXME: Implement! */
+		if(str[count]>=c)
+			return str[count];
 
-int main()
-{
-    return 0;
+	}
+	return str[0];
 }
