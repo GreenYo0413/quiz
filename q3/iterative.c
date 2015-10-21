@@ -11,7 +11,7 @@ typedef struct TreeNode{
 
 void flatten(TreeNode *root);
 
-int main(int argc, char *argv[]){
+int main(){
 	TreeNode *root;
 
 	root=(TreeNode*)malloc(sizeof(TreeNode));
